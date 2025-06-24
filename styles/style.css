@@ -1,6 +1,4 @@
-body {
-    font-family: 'Raleway', sans-serif;
-}
+
 
 a {
     text-decoration: none;
@@ -10,10 +8,8 @@ a {
     display: flex;
     margin: 92px auto 95px;
     height: 105px;
-    column-gap: 12px;
+    column-gap: 8px;
     font-size: 18px;
-    max-width: 1100px;
-    width: 100%;
 
 }
 
@@ -21,13 +17,20 @@ a {
     display: flex;
     align-items: flex-start;
     margin-left: 22px;
+    margin-top: 15px;
 }
+
 
 
 
 
 .header__links-list-item_no-bullet {
     list-style: none;
+
+}
+
+.header__links-list-item_no-bullet .header__link{
+    text-decoration: none;
 }
 
 
@@ -40,9 +43,9 @@ a {
 .header__links-list {
     padding: 28px;
     display: flex;
-    align-items: center;
     list-style: circle;
     gap: 32px;
+
 
 }
 
@@ -50,14 +53,15 @@ a {
 .header__link {
     font-weight: 400;
     font-size: 18px;
-    line-height: 18px;
+    line-height: 1.2;
     letter-spacing: 0.18px;
-    text-decoration: none;
+    text-decoration: underline;
     color: #000;
     display: inline-block;
     vertical-align: top;
     padding: 0;
     margin: 0;
+    text-underline-offset: 4px;
 }
 
 
@@ -67,7 +71,8 @@ a {
     flex-direction: column;
     margin-top: 18px;
     line-height: 24.3px;
-    margin-left: 178px;
+    margin-left: 176px;
+    font-style: normal;
 }
 
 .header__address a  {
@@ -104,7 +109,7 @@ a {
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
 
@@ -124,7 +129,7 @@ a {
     font-size: 100px;
     font-weight: 700;
     line-height: 1;
-    margin: -10px -40px 60px;
+    margin: -12px -40px 60px;
     text-transform: uppercase;
 }
 
@@ -166,7 +171,7 @@ a {
     flex-wrap: wrap;
     margin-top: 125px;
     margin-left: -11px;
-    padding: 3px 0;
+    padding: 14px 0;
 }
 
 .cover__description-text {
@@ -193,10 +198,8 @@ a {
 
 /* Section Lots */
 .lots {
-    padding: 142px 50px;
+    padding: 142px 0;
     background-color: #fff;
-    max-width: 1100px;
-    width: 100%;
     margin: 0 auto;
 }
 
@@ -204,7 +207,7 @@ a {
     font-size: 40px;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 27px;
+    margin-bottom: 26px;
     text-transform: uppercase;
     margin-left: 64px;
     margin-top: 37px;
@@ -265,7 +268,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: -11px 0;
+    margin: 11px 0;
     padding: 40px;
     height: 100%;
     box-sizing: border-box;
@@ -277,19 +280,18 @@ a {
     line-height: 1.2;
     text-transform: uppercase;
     text-decoration: underline;
-    margin-bottom: 5px;
 }
 
 .card__text {
     font-size: 20px;
     line-height: 1.2;
     font-weight: 400;
-    margin: 0;
+    margin-bottom: 18px;
 }
 
 .lots__look-more-link {
     display: inline-block;
-    margin-top: 24px;
+    margin-top: 42px;
     font-size: 20px;
     text-decoration: underline;
     color: #000;
@@ -312,8 +314,7 @@ a {
 
 .about__column--text {
     flex-grow: 1;
-    margin: 54px -32px;
-    gap: 30px;
+    margin: 85px -32px;
 }
 
 .about__logo {
@@ -324,12 +325,11 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: -18px 71px;
+    margin: -19px 71px;
 }
 
 .about__logo-image {
-    max-width: 100%;
-    max-height: 50%;
+    height: 114px;
 }
 
 .about__title {
@@ -346,9 +346,11 @@ a {
     letter-spacing: 0.2px;
 }
 
-.about__paragraph {
-    margin-bottom: 16px;
+.about__text p + p {
+    margin-top: 25px;
 }
+
+
 
 .footer {
     display: flex;
@@ -356,15 +358,13 @@ a {
     padding: 40px 20px;
     background-color: #fff;
     font-size: 18px;
-    max-width: 1100px;
-    width: 100%;
     margin: 0 auto;
 }
 
 .address {
     display: flex;
     flex-direction: column;
-    margin: 35px 51px;
+    margin: -5px 31px;
     line-height: 24.3px;
 }
 
@@ -386,8 +386,10 @@ a {
 
 .footer__menu {
     text-align: center;
-    margin: 20px 0 0 33px ;
-    line-height: 1;
+    margin-top: -8px;
+    margin-left: 34px;
+    line-height: 0.9;
+
 }
 
 .footer__menu-list {
@@ -401,6 +403,7 @@ a {
 .footer__menu-link {
     text-decoration: underline;
     color: black;
+    text-underline-offset: 4px;
 }
 
 .footer__menu-link_active {
@@ -411,7 +414,7 @@ a {
     display: flex;
     gap: 48px;
     list-style: none;
-    margin: 35px 50px;
+    margin: -6px 30px;
 }
 
 .footer__social-link {
